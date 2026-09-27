@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expression Evaluation</title>
+
+    <script>
+        function calculate()
+        {
+            var expression =
+                document.getElementById("expression").value;
+
+            var result = eval(expression);
+
+            document.getElementById("result").innerHTML =
+                "Result = " + result;
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Mathematical Expression</h2>
+
+Enter Expression:
+
+<input type="text" id="expression">
+
+<input type="button"
+       value="Calculate"
+       onclick="calculate()">
+
+<p id="result"></p>
+
+</body>
+</html>
